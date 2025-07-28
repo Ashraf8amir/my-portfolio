@@ -1,59 +1,142 @@
-# TestNg
+# My Portfolio - Angular Portfolio Website
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.3.
+A modern, responsive portfolio website built with Angular 20, showcasing my projects, skills, and contact information.
 
-## Development server
+## 🚀 Features
 
-To start a local development server, run:
+- **Responsive Design**: Works perfectly on desktop, tablet, and mobile devices
+- **Modern UI**: Clean and professional design with smooth animations
+- **Project Showcase**: Display projects with detailed descriptions and technologies used
+- **Skills Section**: Highlight technical skills and expertise
+- **Contact Form**: Easy way for visitors to get in touch
+- **Smooth Navigation**: Seamless page transitions with scroll-to-top functionality
 
-```bash
-ng serve
+## 🛠️ Technologies Used
+
+- **Angular 20**: Latest version of Angular framework
+- **TypeScript**: For type-safe development
+- **Bootstrap**: For responsive design and styling
+- **HTML5 & CSS3**: Modern web standards
+- **Git**: Version control
+
+## 📁 Project Structure
+
+```
+src/
+├── app/
+│   ├── _models/          # Data models and interfaces
+│   ├── about/            # About page component
+│   ├── card/             # Project card component
+│   ├── contact/          # Contact page component
+│   ├── footer/           # Footer component
+│   ├── header/           # Header navigation component
+│   ├── home/             # Home page component
+│   ├── portfolio/        # Portfolio/Projects page component
+│   ├── services/         # Shared services (ScrollService)
+│   └── skills/           # Skills page component
+├── assets/               # Images and static files
+└── styles.css           # Global styles
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## 🚀 Getting Started
 
-## Code scaffolding
+### Prerequisites
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- Node.js (version 18 or higher)
+- npm or yarn package manager
 
-```bash
-ng generate component component-name
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/my-portfolio.git
+   cd my-portfolio
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**
+   ```bash
+   ng serve
+   ```
+
+4. **Open your browser**
+   Navigate to `http://localhost:4200/` to view the application.
+
+## 📝 Available Scripts
+
+- `ng serve` - Start development server
+- `ng build` - Build the project for production
+- `ng test` - Run unit tests
+- `ng e2e` - Run end-to-end tests
+- `ng lint` - Run linting
+
+## 🎨 Customization
+
+### Adding New Projects
+Edit the `projects` array in `src/app/portfolio/portfolio.component.ts`:
+
+```typescript
+projects: Card[] = [
+  {
+    id: 1,
+    name: "Project Name",
+    summary: "Brief description",
+    description: "Detailed description",
+    projectLink: 'https://github.com/your-repo',
+    tags: [Tag.REACT, Tag.NODEJS],
+    pictures: ["../../assets/project-image.jpg"]
+  }
+]
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### Updating Personal Information
+- Edit `src/app/home/home.component.html` for home page content
+- Update `src/app/about/about.component.html` for about section
+- Modify `src/app/contact/contact.component.html` for contact information
 
+## 🌐 Deployment
+
+### Build for Production
 ```bash
-ng generate --help
+ng build --configuration production
 ```
 
-## Building
+### Deploy to GitHub Pages
+1. Build the project
+2. Push to GitHub
+3. Enable GitHub Pages in repository settings
+4. Set source to `/docs` or `/gh-pages` branch
 
-To build the project run:
+## 📱 Browser Support
 
-```bash
-ng build
-```
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## 🤝 Contributing
 
-## Running unit tests
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## 📄 License
 
-```bash
-ng test
-```
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Running end-to-end tests
+## 📞 Contact
 
-For end-to-end (e2e) testing, run:
+- **Name**: Ashraf Samir
+- **Email**: your-email@example.com
+- **LinkedIn**: [Your LinkedIn Profile]
+- **GitHub**: [Your GitHub Profile]
 
-```bash
-ng e2e
-```
+---
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+⭐ If you found this project helpful, please give it a star!

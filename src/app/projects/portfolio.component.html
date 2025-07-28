@@ -1,0 +1,45 @@
+<div class="portfolio-container">
+  <div class="main-content">
+    <div class="portfolio-hero-section">
+      <div class="text-center">
+        <h1 class="portfolio-title">
+          My Projects
+        </h1>
+
+        <h2 class="portfolio-subtitle">
+          Showcasing My Development Journey
+        </h2>
+
+        <p class="portfolio-description">
+          Welcome to my portfolio! Here you'll find a collection of my latest projects and work.
+          Each project demonstrates my skills in web development, problem-solving, and creating user-friendly applications.
+        </p>
+
+        <div class="projects-grid">
+          @for(project of projects; track project.id) {
+            <div class="project-card">
+              <div class="card card-layout" style="max-width: 350px; min-width: 350;" (click)="openProjectLink(project)">
+                  <div class="card-image">
+                      <img [src]="project.pictures[0]" [alt]="project.name" class="project-image">
+                  </div>
+                  <div class="card-body">
+                      <h5 class="card-title">{{ project.name }}</h5>
+                      <p class="card-text">{{ project.summary }}</p>
+                  </div>
+                  <div class="card-footer">
+                      <div class="d-flex flex-wrap justify-content-center">
+                          @for(tag of project.tags; track tag) {
+                              <div class="tag me-2 mb1" [style.background-color]="tag.color">{{ tag }}</div>
+                          }
+                      </div>
+                  </div>
+              </div>
+            </div>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>

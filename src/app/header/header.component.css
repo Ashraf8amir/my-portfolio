@@ -1,0 +1,66 @@
+@import '../../styles.css';
+
+/* Transparent Header */
+.transparent-header {
+    background: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    background: transparent;
+    padding: 1rem 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: #f8f9fa;
+    text-shadow: 0 0 10px rgba(74, 144, 226, 0.3);
+    transition: all 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #4A90E2;
+    text-shadow: 0 0 15px rgba(74, 144, 226, 0.5);
+}
+
+.nav-link {
+    color: #adb5bd;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin: 0 0.2rem;
+    font-size: 1.1rem;
+}
+
+.surname {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0.5rem 0;
+    }
+
+    .navbar-brand {
+        font-size: 20px;
+    }
+
+    .nav-link {
+        padding: 0.3rem 0.8rem;
+        font-size: 1rem;
+    }
+}
