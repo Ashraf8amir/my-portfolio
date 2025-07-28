@@ -130,13 +130,6 @@ ng build --configuration production
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 📞 Contact
-
-- **Name**: Ashraf Samir
-- **Email**: your-email@example.com
-- **LinkedIn**: [Your LinkedIn Profile]
-- **GitHub**: [Your GitHub Profile]
-
 ---
 
 ⭐ If you found this project helpful, please give it a star!
